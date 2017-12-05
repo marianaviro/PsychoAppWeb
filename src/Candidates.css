@@ -1,0 +1,30 @@
+button.disabled {
+  background-color: #d0d0d0 !important;
+  cursor: default;
+}
+
+button.candidates {
+  min-width: 100%;
+  margin: 5px;
+  margin-left: 0px;
+}
+
+.display-candidate {
+  height: 240px;
+}
+
+.display-candidate li{
+  min-width: 250px;
+  height: 150px;
+}
+
+.candidate-info {
+  margin-bottom: 20px;
+}
+
+.display-candidate {
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  height: 180px;
+  color: #060606;
+}

@@ -1,0 +1,388 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#logo{
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+body {
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #fff;
+  /*background-color: #2F4858;*/
+}
+
+header {
+  color: #fff;
+  background-color: #33658A;
+  padding: 5px 0 5px 90px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);
+}
+
+header p {
+  width: 400px;
+  margin: 0 auto;
+}
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+header button {
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 50px;
+  background-color: #2F4858;
+}
+
+.fa {
+  font-size: 22px;
+  transform: translateY(50deg);
+}
+
+header i {
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+section button i.fa{
+  font-size: 15px;
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+section.add-exam button, section.edit-exam button, section.add-test button, section.edit-test button {
+  min-width: 120px;
+}
+
+header button{
+  font-size: 15px;
+  margin-right: 5px;
+  margin-left: 0px;
+  min-width: 120px;
+}
+
+section.display-exam button i.fa, section.display-test button i.fa{
+  font-size: 15px;
+  /*margin-right: 12px;*/
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.container.exam, .container.test, .container.qr {
+  display: block;
+}
+
+.wrapper {
+  max-width: 1100px;
+  /*margin: 0 auto;*/
+}
+
+.add-item {
+  border-radius: 2px;
+  border-top: 3px solid #103D5D;
+  margin-right: 50px;
+  background-color: #F6AE2D;
+  padding: 60px 18px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);
+  margin-bottom: 34px;
+  margin-right: auto;
+}
+
+.display-item {
+  width: 65%;
+  margin-left: 50px;
+}
+
+.display-item button {
+  margin-top: 20px;
+  margin-left: auto;
+  display: block;
+}
+
+.add-item form {
+  width: 100%;
+  overflow: hidden;
+}
+
+input {
+  color: #b0b0b0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border: 0;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+textarea {
+  color: #b0b0b0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #e0e0e0;
+}
+
+form p {
+  color: #606060;
+  margin-bottom: 8px;
+}
+
+ul {
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+}
+
+li {
+  /*width: calc(50% - 50px);*/
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #eaeaea;
+  color: #000;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.1), 0 3px 3px -2px rgba(0,0,0,.1), 0 1px 8px 0 rgba(0,0,0,.1);
+  box-shadow: none;
+  display: inline-block;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+li.selected{
+  /*border-color: #2F4858;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;*/
+  box-shadow: 0px 0px 15px #2F4858;
+}
+
+li.selected h3{
+  background-color: #33658A;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+li h3 {
+  background-color: #2F4858;
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+li p {
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  margin: 0;
+  color: #606060;
+}
+
+li p b{
+  color: #2F4858;
+}
+
+form button {
+  margin-top: 10px;
+}
+
+button {
+  border-radius: 2px;
+  min-width: 50px;
+  background-color: #FFB737;
+  cursor: pointer;
+  border: 0;
+  min-width: 80px;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  padding: 10px 2px;
+  margin: 5px;
+  margin-left: 0px;
+}
+
+button:disabled {
+  background-color: #d0d0d0 !important;
+  cursor: default;
+}
+
+button:hover {
+  background-color: #F6AE2D;
+}
+
+button.success {
+  background-color: #9EE05C;
+}
+
+button.success:hover {
+  background-color: #97D658;
+}
+
+button.warning {
+  background-color: #FFB737;
+}
+
+button.warning:hover {
+  background-color: #F6AE2D;
+}
+
+button.danger {
+  background-color: #FF5733;
+}
+
+button.danger:hover {
+  background-color: #EB5130;
+}
+
+button.info {
+  background-color: #55DDE0;
+}
+
+button.info:hover {
+  background-color: #52D3D6;
+}
+
+
+.display-exam, .display-test, .display-candidate {
+  height: 260px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  white-space: nowrap;
+  padding-left: 5px;
+  clear: left;
+  background-color: #f6f6f6;
+  padding-right: 30px;
+}
+
+.display-test {
+  height: 340px;
+}
+
+.add-exam, .edit-exam, .add-test, .edit-test {
+  clear: right;
+  background-color: #f6f6f6;
+  padding: 20px;
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+.container.exam h2, .container.test h2, .container.qr h2{
+  color: #f0f0f0;
+}
+
+.wrapper.landing {
+  margin: 0px;
+  padding: 0px;
+  background-color: #2F4858;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper.display {
+  padding-right: 30px;
+}
+
+.exam-info, .test-info {
+  min-height: 100px;
+  max-width: 350px;
+  word-wrap: break-word;
+  padding: 5px;
+}
+
+.exam-info textarea, .test-info textarea {
+  background-color: rgba(255,255,255,0);
+  border: none;
+  font-size: 14px;
+  color: #606060;
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+  resize: none;
+  overflow-x: scroll;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+}
+
+.exam-actions, .test-actions {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+#canvas{
+  width: 300px !important;
+  height: 300px !important;
+}
+
+/*.qr{
+  width: 100%;
+  margin-left: 60px;
+  margin-right: 50px;
+}*/
